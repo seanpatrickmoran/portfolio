@@ -6,7 +6,7 @@ import "./example.css"
 
 export function ProjComboBox() {
   const links = [
-    {id: 'linked-1', category: 'LLM Prompt Compression', title: 'pokemonLLM', route: '', href: 'https://github.com/seanpatrickmoran/brainWorms'},
+    // {id: 'linked-1', category: 'ML: Prompt Compression', title: 'Extended', route: '', href: 'https://github.com/seanpatrickmoran/brainWorms'},
     {id: 'linked-2', category: 'Web Design/Similarity Search', title: 'Lariat', route: '', href: 'https://github.com/seanpatrickmoran/lariat-web-prototype'},
     {id: 'linked-3', category: 'Web Design', title: 'Colloidal', route: '', href: 'https://github.com/seanpatrickmoran/colloidal'},
     {id: 'linked-4', category: 'Bioinformatics/Machine Learning', title: 'Strainer', route: '', href: 'https://github.com/seanpatrickmoran/strainer'},
