@@ -4,7 +4,7 @@ import { Rnd } from "react-rnd";
 
 // import React, {useState} from 'react';
 import React, {useEffect,useState} from 'react';
-import ollama from 'ollama';
+// import ollama from 'ollama';
 import "./CallBox.css"
 
 
@@ -327,11 +327,7 @@ export class CallBox extends React.Component{
           autoFocus="autofocus"/>
       </span></p>
       </section>
-
-    {/*</div>*/}
 	  </div>
-    {/*</div>*/}
-
 	  </Rnd>
 	  </>
   }

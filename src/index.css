@@ -7,10 +7,30 @@
     box-sizing: border-box;
 }
 
-select {
-    width:200px;
+
+
+.row-container {
+/*  margin: 3px;*/
+  display: flex;
+  flex-direction: row;
 }
 
+
+
+select {
+  width:200px;
+  display: inline-block;
+  text-align: left;
+
+}
+
+progress {
+  width: 100px;
+  height: 0.55rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 .blink {
     animation: blink-animation 0.25s infinite;
@@ -26,6 +46,79 @@ select {
   }
 
 
+#headerTitle{
+    margin: 0px;
+}
+
+#BoxTitle{
+    margin:0px;
+    height: 26px;
+}
+
+#BoxTitleHandle{
+  margin-top: -20px;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;  
+}
+
+#BoxTitleCloseBox{
+  margin-top: -21px;
+  margin-left: -85%; 
+  z-index: 4;
+  }
+
+#BoxTitleCloseInner{
+    margin-top: 2px;
+}
+
+#BoxCloseInner{
+    padding: 3px;
+    margin-top: -2px;
+  }
+
+
+
+.topTitleLine{
+    margin-top: 4px;
+    position: relative;
+    width: 98%;
+    height: 1px;
+    z-index: 2;
+    background-color: #000000;
+    overflow: hidden;/*    margin-top: 6px;*/
+}
+
+.bottomTitleLines{
+    margin-top: 2px;
+    margin-bottom: 4px;
+    position: relative;
+    width: 98%;
+    height: 1px;
+    z-index: 2;
+    background-color: #000000;
+    overflow: hidden;/*    margin-top: 6px;*/
+}
+
+    div.titleLines {
+    /*  display:contents;*/
+      margin-top: 2px; 
+/*      margin-left: 15px;
+      margin-right: 15px;*/
+      position: relative;
+      width: 98%;
+      height: 1px;
+      z-index: 2;
+      overflow: hidden;
+    }
+
+
+button {
+    text-align: center;
+    display: inline-block;
+}
 
 @media (prefers-color-scheme: light) {
 
@@ -36,9 +129,10 @@ select {
 
   color-scheme: light;
   color: rgba(0, 0, 0, 0.87);
-/*  background-color: #FFFFFF;*/
-/*    background-image: url("../img/patterns/12821.png");*/
-    background-image: url("../img/patterns/stardust.png");
+  background-color: rgba(220, 220, 220, 0.87);
+/*  background-image: url("../img/patterns/dirty-old-black-shirt.png");*/
+  background-image: url("../img/patterns/redox-02.png");
+/*  background-image: url("../img/patterns/stardust.png");*/
 
 
   font-synthesis: none;
@@ -47,7 +141,9 @@ select {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+a {
+    color: #c15260;
+}
 
 .blink {
     color: #c15260;
@@ -58,6 +154,10 @@ button {
     font-size: inherit;
     color: inherit;
 }
+
+progress::-moz-progress-bar { background: #c15260; }
+progress::-webkit-progress-value { background: #c15260; }
+progress { color: #c15260; }
 
 /*html,
 body {
@@ -249,9 +349,9 @@ nav {
     background-color: #ddd;
   }
 
-  a{
+/*  a{
     color: #f5f6f7;
-  }
+  }*/
 
     div.headerTitle {
       display: flex;
@@ -296,13 +396,6 @@ nav {
 
 
 
-    .control-box {
-        background-color: #FFFFFF;
-    /*    padding: 24px;*/
-/*        box-shadow:
-      inset -1px -1px 0px 0px #ccc,
-      inset 1px 1px 0px 0px #888;*/
-    }
     .close-box {
     /*    position: relative;*/
         background-color: #FFFFFF;
@@ -370,11 +463,13 @@ nav {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+    color: #14998b;
+}
 
 .blink {
     color: #14998b;
   }
-
 
 
 button {
@@ -382,6 +477,10 @@ button {
     font-size: inherit;
     color: inherit;
 }
+
+progress::-moz-progress-bar { background: #14998b; }
+progress::-webkit-progress-value { background: #14998b; }
+progress { color: #14998b; }
 
 
     body {
@@ -501,6 +600,7 @@ button {
       overflow: hidden;
     }
 
+
     div.callTitle {
       overflow: visible;
       padding: 0px;
@@ -514,6 +614,17 @@ button {
       opacity: 100%;
     /*  box-shadow: 0 0 10px black;*/
     }
+
+
+
+
+    .content {
+        font-size: 14px;
+    }
+
+
+
+
 
     /*div .control-box {
 
